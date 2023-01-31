@@ -1,15 +1,8 @@
+import Categories from "./components/category-list/Categories";
+import categoriesData from "./data/catagoriesData";
+
 function App() {
-  return (
-    <div className="categories-container">
-      <div className="category-container">
-        {/* <img src="" alt="" /> */}
-        <div className="category-body-container">
-          <h2>Hats</h2>
-          <p>Shop now</p>
-        </div>
-      </div>
-    </div>
-  );
+  return <Categories categories={categoriesData} />;
 }
 
 export default App;
