@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Home, Authentication, Shop } from "./pages";
+import { Navbar, Home, Authentication, Shop, Checkout } from "./pages";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
+        <Route path="checkout" element={<Checkout />} />
       </Route>
     </Routes>
   );
